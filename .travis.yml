@@ -1,0 +1,145 @@
+matrix:
+  include:
+  - language: python
+    name: Compatibility Test (Python 3.6 + Bandit)
+    python: 3.6
+    before_install:
+    - git clone https://github.com/TravisToolbox/bandit.git
+    install:
+    - "./bandit/install.sh"
+    script:
+    - "./bandit/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.6 + Pur)
+    python: 3.6
+    before_install:
+    - git clone https://github.com/TravisToolbox/pur.git
+    install:
+    - "./pur/install.sh"
+    script:
+    - "./pur/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.6 + Pycodestyle)
+    python: 3.6
+    before_install:
+    - git clone https://github.com/TravisToolbox/pycodestyle.git
+    install:
+    - "./pycodestyle/install.sh"
+    script:
+    - "./pycodestyle/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.7 + Bandit)
+    python: 3.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/bandit.git
+    install:
+    - "./bandit/install.sh"
+    script:
+    - "./bandit/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.7 + Pur)
+    python: 3.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/pur.git
+    install:
+    - "./pur/install.sh"
+    script:
+    - "./pur/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.7 + Pycodestyle)
+    python: 3.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/pycodestyle.git
+    install:
+    - "./pycodestyle/install.sh"
+    script:
+    - "./pycodestyle/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.8 + Bandit)
+    python: 3.8
+    before_install:
+    - git clone https://github.com/TravisToolbox/bandit.git
+    install:
+    - "./bandit/install.sh"
+    script:
+    - "./bandit/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.8 + Pur)
+    python: 3.8
+    before_install:
+    - git clone https://github.com/TravisToolbox/pur.git
+    install:
+    - "./pur/install.sh"
+    script:
+    - "./pur/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.8 + Pycodestyle)
+    python: 3.8
+    before_install:
+    - git clone https://github.com/TravisToolbox/pycodestyle.git
+    install:
+    - "./pycodestyle/install.sh"
+    script:
+    - "./pycodestyle/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.9 + Bandit)
+    python: 3.9
+    before_install:
+    - git clone https://github.com/TravisToolbox/bandit.git
+    install:
+    - "./bandit/install.sh"
+    script:
+    - "./bandit/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.9 + Pur)
+    python: 3.9
+    before_install:
+    - git clone https://github.com/TravisToolbox/pur.git
+    install:
+    - "./pur/install.sh"
+    script:
+    - "./pur/scan.sh"
+  - language: python
+    name: Compatibility Test (Python 3.9 + Pycodestyle)
+    python: 3.9
+    before_install:
+    - git clone https://github.com/TravisToolbox/pycodestyle.git
+    install:
+    - "./pycodestyle/install.sh"
+    script:
+    - "./pycodestyle/scan.sh"
+  - language: ruby
+    name: YAML Linting (rvm 2.7)
+    rvm: 2.7
+    before_install:
+    - git clone https://github.com/TravisToolbox/yaml-lint
+    install:
+    - "./yaml-lint/install.sh"
+    script:
+    - "./yaml-lint/scan.sh"
+  - language: bash
+    name: Shellcheck (Bash)
+    os: linux
+    arch: arm64-graviton2
+    before_install:
+    - git clone https://github.com/TravisToolbox/shellcheck
+    install:
+    - "./shellcheck/install.sh"
+    script:
+    - "./shellcheck/scan.sh"
+  - language: ruby
+    name: Link Checking (rvm 2.7)
+    rvm: 2.7
+    env:
+    - WHITELIST="https://img.shields.io"
+    - EXCLUDE_FILES="CHANGELOG.md"
+    before_install:
+    - git clone https://github.com/TravisToolbox/awesomebot
+    install:
+    - "./awesomebot/install.sh"
+    script:
+    - "./awesomebot/scan.sh"
+notifications:
+  email: false
+  slack:
+    secure: ZzIK+FCg2riFm9TtN3TMhrKE4Y3jlIhON4TlsZfNAqNahk1TOWaWWb1wSYfdb72jF97l4vw6LC5dvB+R07clVheNXpnvCCpZ6K8vIqnRVkDRYpAA6YnrnparH2WRGeZFeiT/Y2QsPHZmawzbdd/Nt0kFtlCkcCXgE+KUZRz9nwkg4854GJ3nmjSbuQQqAvrCWTuHfzdchenb7RM/p6JJdT0MHXUlcIIHve/FpcCSToWPwk1iv1VF5nfVPpmZ3GvQRaexjvfxjjV26IphjYcw4HASIsckOwcwrc4nCfssqaLeH3Izba1BVUPscgk9P+Zk815TfhLRosUr5ADSPqdjeITcPD7SUsBBtCMStiKP2xYmeT1rCNL94cimCcZqJT6V30/Sad1zhFZZm6vnSv4BPQqWZBZijO7UIFqQsY1UwEpxD64qCZGpnPY2I0Ai5t7Q1Ytinkl2iwvAjgqtc0iMzSs5cFPRQi67PGLKqL7OvEbeASaLDLD7pkMzkPNw9D/w2mhyYsQn5mpQkgPLo3brknpA8BzadpHQz3XogIcHBNyw5gJyzgia0FuaRfrZDHOC81QhmJhICBU+0qFVuVJ9ABX+871JeFYq94R6zbkxcjmFPtjKmSXFgb3sURCs8sp75nS1aSd213lvty+tJYSrbMx1g79eq16oJ8h7HtmBJdE=
