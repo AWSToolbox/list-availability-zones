@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Fix travis -> slack integration [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Update requirements [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- Fix travis -> slack integration [`[63f105c]`](https://github.com/AWSToolbox/list-availability-zones/commit/63f105c2025a46771754bd189f21b688f7858757)
 
 ### [v0.1.0](https://github.com/AWSToolbox/list-availability-zones/releases/v0.1.0)
 
