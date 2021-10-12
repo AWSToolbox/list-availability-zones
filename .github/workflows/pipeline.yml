@@ -9,6 +9,7 @@ jobs:
         python: [ '3.6', '3.7', '3.8', '3.9' ]
     name: Bandit Test on Python ${{ matrix.python }}
     steps:
+      - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python }}
         uses: actions/setup-python@v2
         with:
@@ -22,6 +23,7 @@ jobs:
         python: [ '3.6', '3.7', '3.8', '3.9' ]
     name: Pur Test on Python ${{ matrix.python }}
     steps:
+      - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python }}
         uses: actions/setup-python@v2
         with:
@@ -35,6 +37,7 @@ jobs:
         python: [ '3.6', '3.7', '3.8', '3.9' ]
     name: Pycodestyle Test on Python ${{ matrix.python }}
     steps:
+      - uses: actions/checkout@v2
       - name: Set up Python ${{ matrix.python }}
         uses: actions/setup-python@v2
         with:
