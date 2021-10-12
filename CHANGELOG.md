@@ -9,6 +9,8 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 - testing [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
 
+- testing [`[16412e2]`](https://github.com/AWSToolbox/list-availability-zones/commit/16412e2ab319cc3542e908f9e78be427698c6469)
+
 - testing [`[004b7da]`](https://github.com/AWSToolbox/list-availability-zones/commit/004b7da7f02d3c78e3ac8d34a709919338053393)
 
 - Fix pur issues from travis [`[6a57bbe]`](https://github.com/AWSToolbox/list-availability-zones/commit/6a57bbed42604f015a8f2f1d5cd6c7efbf36ff2a)
