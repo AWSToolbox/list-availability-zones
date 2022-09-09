@@ -84,7 +84,6 @@ jobs:
       - pur
       - pycodestyle
       - awesomebot
-      - shellcheck2
       - shellcheck
       - yaml-lint
     runs-on: ubuntu-latest
