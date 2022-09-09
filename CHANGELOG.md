@@ -7,7 +7,13 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Update workflows [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- fixes [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- Bump actions/setup-python from 2 to 4 [`[#1]`](https://github.com/AWSToolbox/list-availability-zones/pull/1)
+
+- Bump actions/checkout from 2 to 3 [`[#2]`](https://github.com/AWSToolbox/list-availability-zones/pull/2)
+
+- Update workflows [`[ea61922]`](https://github.com/AWSToolbox/list-availability-zones/commit/ea61922d5d2144bf8383aed9850499411e06e5ad)
 
 - Update workflows [`[7d0e3b6]`](https://github.com/AWSToolbox/list-availability-zones/commit/7d0e3b6f77a67d42bdfc52100cb9734b10d81525)
 

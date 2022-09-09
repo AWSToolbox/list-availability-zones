@@ -2,6 +2,49 @@ name: CICD Pipeline
 on: [push, pull_request]
 
 jobs:
+  bandit:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: [ '3.7', '3.8', '3.9', '3.10' ]
+    name: Bandit Test on Python ${{ matrix.python }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run Bandit
+        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/bandit/master/pipeline.sh)
+  pur:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: [ '3.7', '3.8', '3.9', '3.10' ]
+    name: Pur Test on Python ${{ matrix.python }}
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run Pur
+        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pur/master/pipeline.sh)
+  pycodestyle:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: [ '3.6', '3.7', '3.8', '3.9', '3.10' ]
+    name: Pycodestyle Test on Python ${{ matrix.python }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python ${{ matrix.python }}
+        uses: actions/setup-python@v4
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Run Pycodestyle
+        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pycodestyle/master/pipeline.sh)
+
   awesomebot:
     name: Awesomebot
     runs-on: ubuntu-latest
@@ -42,6 +85,9 @@ jobs:
     if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
     name: Slack Post Workflow Notification
     needs:
+      - bandit
+      - pur
+      - pycodestyle
       - awesomebot
       - shellcheck
       - yaml-lint
