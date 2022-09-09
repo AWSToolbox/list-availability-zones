@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- fixes [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Remove pur [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- fixes [`[ebb7094]`](https://github.com/AWSToolbox/list-availability-zones/commit/ebb7094c347ee6f795ae51c44f1bcbf142b7db7c)
 
 - Bump actions/setup-python from 2 to 4 [`[#1]`](https://github.com/AWSToolbox/list-availability-zones/pull/1)
 

@@ -16,20 +16,20 @@ jobs:
           python-version: ${{ matrix.python }}
       - name: Run Bandit
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/bandit/master/pipeline.sh)
-  pur:
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python: [ '3.7', '3.8', '3.9', '3.10' ]
-    name: Pur Test on Python ${{ matrix.python }}
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python }}
-      - name: Run Pur
-        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pur/master/pipeline.sh)
+#  pur:
+#    runs-on: ubuntu-latest
+#    strategy:
+#      matrix:
+#        python: [ '3.7', '3.8', '3.9', '3.10' ]
+#    name: Pur Test on Python ${{ matrix.python }}
+#    steps:
+#      - uses: actions/checkout@v3
+#      - name: Set up Python ${{ matrix.python }}
+#        uses: actions/setup-python@v4
+#        with:
+#          python-version: ${{ matrix.python }}
+#      - name: Run Pur
+#        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pur/master/pipeline.sh)
   pycodestyle:
     runs-on: ubuntu-latest
     strategy:
@@ -86,7 +86,7 @@ jobs:
     name: Slack Post Workflow Notification
     needs:
       - bandit
-      - pur
+#      - pur
       - pycodestyle
       - awesomebot
       - shellcheck
