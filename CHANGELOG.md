@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Updates [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Workflows [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- Updates [`[438078c]`](https://github.com/AWSToolbox/list-availability-zones/commit/438078cea1e7950b495c868e6e68fb3d7438fe30)
 
 - Bump prettytable from 2.2.1 to 3.4.1 [`[#3]`](https://github.com/AWSToolbox/list-availability-zones/pull/3)
 

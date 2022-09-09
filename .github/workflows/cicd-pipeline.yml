@@ -4,44 +4,39 @@ on: [push, pull_request]
 jobs:
   bandit:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python: [ '3.7', '3.8', '3.9', '3.10' ]
-    name: Bandit Test on Python ${{ matrix.python }}
+    name: Bandit
     steps:
       - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python }}
+      - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python }}
+          python-version: '3.10'
       - name: Run Bandit
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/bandit/master/pipeline.sh)
-#  pur:
-#    runs-on: ubuntu-latest
-#    strategy:
-#      matrix:
-#        python: [ '3.7', '3.8', '3.9', '3.10' ]
-#    name: Pur Test on Python ${{ matrix.python }}
-#    steps:
-#      - uses: actions/checkout@v3
-#      - name: Set up Python ${{ matrix.python }}
-#        uses: actions/setup-python@v4
-#        with:
-#          python-version: ${{ matrix.python }}
-#      - name: Run Pur
-#        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pur/master/pipeline.sh)
-  pycodestyle:
+
+  pur:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python: [ '3.7', '3.8', '3.9', '3.10' ]
-    name: Pycodestyle Test on Python ${{ matrix.python }}
+    name: Pur
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Python ${{ matrix.python }}
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
         uses: actions/setup-python@v4
         with:
-          python-version: ${{ matrix.python }}
+          python-version: '3.10'
+      - name: Run Pur
+        env:
+          SHOW_ERRORS: true
+        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pur/master/pipeline.sh)
+
+  pycodestyle:
+    runs-on: ubuntu-latest
+    name: Pycodestyle
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
       - name: Run Pycodestyle
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pycodestyle/master/pipeline.sh)
 
@@ -86,9 +81,10 @@ jobs:
     name: Slack Post Workflow Notification
     needs:
       - bandit
-#      - pur
+      - pur
       - pycodestyle
       - awesomebot
+      - shellcheck2
       - shellcheck
       - yaml-lint
     runs-on: ubuntu-latest
