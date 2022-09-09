@@ -7,7 +7,68 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Remove pur [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Updates [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- Bump prettytable from 2.2.1 to 3.4.1 [`[#3]`](https://github.com/AWSToolbox/list-availability-zones/pull/3)
+
+- Bump requests from 2.26.0 to 2.28.1 [`[#6]`](https://github.com/AWSToolbox/list-availability-zones/pull/6)
+
+Bumps [requests](https://github.com/psf/requests) from 2.26.0 to 2.28.1.
+- [Release notes](https://github.com/psf/requests/releases)
+- [Changelog](https://github.com/psf/requests/blob/main/HISTORY.md)
+- [Commits](https://github.com/psf/requests/compare/v2.26.0...v2.28.1)
+
+---
+updated-dependencies:
+- dependency-name: requests
+ dependency-type: direct:production
+ update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump botocore from 1.21.59 to 1.27.69 [`[#5]`](https://github.com/AWSToolbox/list-availability-zones/pull/5)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.21.59 to 1.27.69.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.21.59...1.27.69)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump boto3 from 1.18.59 to 1.24.69 [`[#4]`](https://github.com/AWSToolbox/list-availability-zones/pull/4)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.18.59 to 1.24.69.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.18.59...1.24.69)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Remove pur [`[ce844a1]`](https://github.com/AWSToolbox/list-availability-zones/commit/ce844a1e1f2cbec393d4f15da5d07f81bcf9b7cc)
 
 - fixes [`[ebb7094]`](https://github.com/AWSToolbox/list-availability-zones/commit/ebb7094c347ee6f795ae51c44f1bcbf142b7db7c)
 
