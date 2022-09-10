@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Fix codeql errors [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Add greetings [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- Fix codeql errors [`[df8c8f8]`](https://github.com/AWSToolbox/list-availability-zones/commit/df8c8f890e6d53ef5d41952916ceb3bae871f477)
 
 - Fix build link [`[79f23d2]`](https://github.com/AWSToolbox/list-availability-zones/commit/79f23d2498a2cb690b6eccb1c8b06be958a6981a)
 
