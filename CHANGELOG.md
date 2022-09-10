@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Workflows [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Fix build link [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- Workflows [`[e816732]`](https://github.com/AWSToolbox/list-availability-zones/commit/e816732a19e6f8c843733606a2cbc1f14dc8b6a8)
 
 - Workflows [`[554f1a9]`](https://github.com/AWSToolbox/list-availability-zones/commit/554f1a9f32c11ad318befa1b083ecef749786117)
 
