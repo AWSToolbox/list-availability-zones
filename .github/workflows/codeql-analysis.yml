@@ -22,6 +22,7 @@ jobs:
       fail-fast: false
       matrix:
         language: [ 'python' ]
+        queries: +security-and-quality
 
     steps:
     - name: Checkout repository
