@@ -22,7 +22,6 @@ jobs:
       fail-fast: false
       matrix:
         language: [ 'python' ]
-        queries: +security-and-quality
 
     steps:
     - name: Checkout repository
@@ -32,6 +31,7 @@ jobs:
       uses: github/codeql-action/init@v2
       with:
         languages: ${{ matrix.language }}
+        queries: +security-and-quality
 
     - name: Autobuild
       uses: github/codeql-action/autobuild@v2
