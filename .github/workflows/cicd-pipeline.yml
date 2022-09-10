@@ -38,6 +38,18 @@ jobs:
       - name: Run Pycodestyle
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pycodestyle/master/pipeline.sh)
 
+  pylint:
+    runs-on: ubuntu-latest
+    name: Pylint
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+      - name: Run Pylint
+        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pylint/master/pipeline.sh)
+
   awesomebot:
     name: Awesomebot
     runs-on: ubuntu-latest
@@ -81,6 +93,7 @@ jobs:
       - bandit
       - pur
       - pycodestyle
+      - pylint
       - awesomebot
       - shellcheck
       - yaml-lint

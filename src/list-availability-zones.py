@@ -1,4 +1,6 @@
 #!/usr/bin/env python
+# pylint: disable=C0103
+
 
 """
 This script will query the AWS API using boto3 and provide a list (table) of all regions and availability zones.
@@ -10,12 +12,13 @@ Example Usage:
 
 from __future__ import print_function
 
-import boto3
 import sys
+import boto3
 
 from botocore.exceptions import ClientError
 from prettytable import PrettyTable
 
+# pylint: disable=C0103
 unknown_string = 'unknown'
 country_mapping = {
                     'af-south-1': 'Africa (Cape Town)',
@@ -41,10 +44,9 @@ country_mapping = {
                   }
 
 
-def main(cmdline=None) -> None:
-
+def main(_cmdline=None) -> None:
     """
-    The main function. This takes the command line arguments provided and parse them.
+    Something to go here
     """
 
     client = boto3.client('ec2')
@@ -54,7 +56,7 @@ def main(cmdline=None) -> None:
 
 def query_api(client):
     """
-    Query the API
+    Something to go here
     """
 
     results = []
@@ -74,7 +76,7 @@ def query_api(client):
 
                 try:
                     aws_azs = ec2_region.describe_availability_zones(Filters=my_region)
-                except ClientError as e:
+                except ClientError as _e:
                     az_list = ''
                     az_count = ''
                 else:

@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Add greetings [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Added pylint [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- Add greetings [`[3a72c1b]`](https://github.com/AWSToolbox/list-availability-zones/commit/3a72c1bac6dafc26fc08fcbe5f895e639eff8cf5)
 
 - Fix codeql errors [`[df8c8f8]`](https://github.com/AWSToolbox/list-availability-zones/commit/df8c8f890e6d53ef5d41952916ceb3bae871f477)
 
