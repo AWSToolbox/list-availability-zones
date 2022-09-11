@@ -20,28 +20,6 @@ from prettytable import PrettyTable
 
 # pylint: disable=C0103
 unknown_string = 'unknown'
-country_mapping = {
-                    'af-south-1': 'Africa (Cape Town)',
-                    'ap-east-1': 'Asia Pacific (Hong Kong)',
-                    'ap-south-1': 'Asia Pacific (Mumbai)',
-                    'ap-northeast-2': 'Asia Pacific (Seoul)',
-                    'ap-southeast-1': 'Asia Pacific (Singapore)',
-                    'ap-southeast-2': 'Asia Pacific (Sydney)',
-                    'ap-northeast-1': 'Asia Pacific (Tokyo)',
-                    'ca-central-1': 'Canada (Central)',
-                    'eu-central-1': 'Europe (Frankfurt)',
-                    'eu-west-1': 'Europe (Ireland)',
-                    'eu-west-2': 'Europe (London)',
-                    'eu-west-3': 'Europe (Paris)',
-                    'eu-north-1': 'Europe (Stockholm)',
-                    'eu-south-1': 'Europe (Milan)',
-                    'me-south-1': 'Middle East (Bahrain)',
-                    'sa-east-1': 'South America (Sao Paulo)',
-                    'us-east-2': 'US East (Ohio)',
-                    'us-east-1': 'US East (North Virginia)',
-                    'us-west-1': 'US West (California) ',
-                    'us-west-2': 'US West (Oregon)',
-                  }
 
 
 def main(_cmdline=None) -> None:
@@ -49,12 +27,59 @@ def main(_cmdline=None) -> None:
     Something to go here
     """
 
+    country_mapping = get_country_mapping()
+
     client = boto3.client('ec2')
-    results = query_api(client)
+    results = query_api(client, country_mapping)
     display_results(results)
 
 
-def query_api(client):
+def get_country_mapping():
+    """
+    something here
+    """
+
+    ssm = boto3.client('ssm')
+
+    regions = {}
+    for nsc in get_region_short_codes(ssm):
+        regions[nsc] = get_region_long_name(ssm, nsc)
+
+    sorted_regions = dict(sorted(regions.items()))
+
+    return sorted_regions
+
+
+def get_region_long_name(ssm, short_code):
+    """
+    something here
+    """
+
+    param_name = (
+        '/aws/service/global-infrastructure/regions/'
+        f'{short_code}/longName'
+    )
+    response = ssm.get_parameters(
+        Names=[param_name]
+    )
+    return response['Parameters'][0]['Value']
+
+
+def get_region_short_codes(ssm):
+    """
+    something here
+    """
+
+    output = set()
+    for page in ssm.get_paginator('get_parameters_by_path').paginate(
+        Path='/aws/service/global-infrastructure/regions'
+    ):
+        output.update(p['Value'] for p in page['Parameters'])
+
+    return output
+
+
+def query_api(client, country_mapping):
     """
     Something to go here
     """

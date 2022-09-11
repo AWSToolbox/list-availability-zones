@@ -7,7 +7,9 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Added pylint [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Made list of regions dynamic [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- Added pylint [`[cd0ff57]`](https://github.com/AWSToolbox/list-availability-zones/commit/cd0ff57d719526b7f1c032bea4220443ee685403)
 
 - Add greetings [`[3a72c1b]`](https://github.com/AWSToolbox/list-availability-zones/commit/3a72c1bac6dafc26fc08fcbe5f895e639eff8cf5)
 
