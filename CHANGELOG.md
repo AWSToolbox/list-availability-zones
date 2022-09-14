@@ -7,7 +7,11 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Removed pur (dependabot does this now) and added caretaker.yml [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Codacy [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- chore: caretaker action [`[c356e2f]`](https://github.com/AWSToolbox/list-availability-zones/commit/c356e2f3cf194ad179eb93068136addeb02d67d6)
+
+- Removed pur (dependabot does this now) and added caretaker.yml [`[a5a44bf]`](https://github.com/AWSToolbox/list-availability-zones/commit/a5a44bff9986df3e7aa6754161d184b3f0f25600)
 
 - Bump botocore from 1.27.71 to 1.27.72 [`[#10]`](https://github.com/AWSToolbox/list-availability-zones/pull/10)
 
