@@ -14,18 +14,6 @@ jobs:
       - name: Run Bandit
         run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/bandit/master/pipeline.sh)
 
-  pur:
-    runs-on: ubuntu-latest
-    name: Pur
-    steps:
-      - uses: actions/checkout@v3
-      - name: Set up Python 3.10
-        uses: actions/setup-python@v4
-        with:
-          python-version: '3.10'
-      - name: Run Pur
-        run: bash <(curl -s https://raw.githubusercontent.com/CICDToolbox/pur/master/pipeline.sh)
-
   pycodestyle:
     runs-on: ubuntu-latest
     name: Pycodestyle
@@ -91,7 +79,6 @@ jobs:
     name: Slack Post Workflow Notification
     needs:
       - bandit
-      - pur
       - pycodestyle
       - pylint
       - awesomebot
