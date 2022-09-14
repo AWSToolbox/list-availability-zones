@@ -7,7 +7,85 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Made list of regions dynamic [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Removed pur (dependabot does this now) and added caretaker.yml [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+
+- Bump botocore from 1.27.71 to 1.27.72 [`[#10]`](https://github.com/AWSToolbox/list-availability-zones/pull/10)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.27.71 to 1.27.72.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.27.71...1.27.72)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump boto3 from 1.24.71 to 1.24.72 [`[#9]`](https://github.com/AWSToolbox/list-availability-zones/pull/9)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.24.71 to 1.24.72.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.24.71...1.24.72)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump boto3 from 1.24.70 to 1.24.71 [`[#8]`](https://github.com/AWSToolbox/list-availability-zones/pull/8)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.24.70 to 1.24.71.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.24.70...1.24.71)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump botocore from 1.27.70 to 1.27.71 [`[#7]`](https://github.com/AWSToolbox/list-availability-zones/pull/7)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.27.70 to 1.27.71.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.27.70...1.27.71)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Made list of regions dynamic [`[50e1fed]`](https://github.com/AWSToolbox/list-availability-zones/commit/50e1fedd760e6c62f0d88655adfbec7b65c515af)
 
 - Added pylint [`[cd0ff57]`](https://github.com/AWSToolbox/list-availability-zones/commit/cd0ff57d719526b7f1c032bea4220443ee685403)
 
