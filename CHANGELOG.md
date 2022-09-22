@@ -7,7 +7,257 @@ This changelog was automatically generated using [Caretaker](https://github.com/
 
 ### [Unreleased](https://github.com/AWSToolbox/list-availability-zones/compare/v0.1.1...HEAD)
 
-- Codacy [`[head]`](https://github.com/AWSToolbox/list-availability-zones/commit/)
+- Bump actions/stale from 5 to 6 [`[#22]`](https://github.com/AWSToolbox/list-availability-zones/pull/22)
+
+- Bump boto3 from 1.24.77 to 1.24.78 [`[#24]`](https://github.com/AWSToolbox/list-availability-zones/pull/24)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.24.77 to 1.24.78.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.24.77...1.24.78)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump botocore from 1.27.77 to 1.27.78 [`[#23]`](https://github.com/AWSToolbox/list-availability-zones/pull/23)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.27.77 to 1.27.78.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.27.77...1.27.78)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump boto3 from 1.24.76 to 1.24.77 [`[#21]`](https://github.com/AWSToolbox/list-availability-zones/pull/21)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.24.76 to 1.24.77.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.24.76...1.24.77)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump botocore from 1.27.76 to 1.27.77 [`[#20]`](https://github.com/AWSToolbox/list-availability-zones/pull/20)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.27.76 to 1.27.77.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.27.76...1.27.77)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump codacy/codacy-analysis-cli-action from 4.1.0 to 4.2.0 [`[#19]`](https://github.com/AWSToolbox/list-availability-zones/pull/19)
+
+Bumps [codacy/codacy-analysis-cli-action](https://github.com/codacy/codacy-analysis-cli-action) from 4.1.0 to 4.2.0.
+- [Release notes](https://github.com/codacy/codacy-analysis-cli-action/releases)
+- [Commits](https://github.com/codacy/codacy-analysis-cli-action/compare/v4.1.0...v4.2.0)
+
+---
+updated-dependencies:
+- dependency-name: codacy/codacy-analysis-cli-action
+ dependency-type: direct:production
+ update-type: version-update:semver-minor
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump botocore from 1.27.75 to 1.27.76 [`[#18]`](https://github.com/AWSToolbox/list-availability-zones/pull/18)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.27.75 to 1.27.76.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.27.75...1.27.76)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump boto3 from 1.24.75 to 1.24.76 [`[#17]`](https://github.com/AWSToolbox/list-availability-zones/pull/17)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.24.75 to 1.24.76.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.24.75...1.24.76)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump botocore from 1.27.74 to 1.27.75 [`[#16]`](https://github.com/AWSToolbox/list-availability-zones/pull/16)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.27.74 to 1.27.75.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.27.74...1.27.75)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump boto3 from 1.24.74 to 1.24.75 [`[#15]`](https://github.com/AWSToolbox/list-availability-zones/pull/15)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.24.74 to 1.24.75.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.24.74...1.24.75)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump boto3 from 1.24.73 to 1.24.74 [`[#14]`](https://github.com/AWSToolbox/list-availability-zones/pull/14)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.24.73 to 1.24.74.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.24.73...1.24.74)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump botocore from 1.27.73 to 1.27.74 [`[#13]`](https://github.com/AWSToolbox/list-availability-zones/pull/13)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.27.73 to 1.27.74.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.27.73...1.27.74)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump botocore from 1.27.72 to 1.27.73 [`[#12]`](https://github.com/AWSToolbox/list-availability-zones/pull/12)
+
+Bumps [botocore](https://github.com/boto/botocore) from 1.27.72 to 1.27.73.
+- [Release notes](https://github.com/boto/botocore/releases)
+- [Changelog](https://github.com/boto/botocore/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/botocore/compare/1.27.72...1.27.73)
+
+---
+updated-dependencies:
+- dependency-name: botocore
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- Bump boto3 from 1.24.72 to 1.24.73 [`[#11]`](https://github.com/AWSToolbox/list-availability-zones/pull/11)
+
+Bumps [boto3](https://github.com/boto/boto3) from 1.24.72 to 1.24.73.
+- [Release notes](https://github.com/boto/boto3/releases)
+- [Changelog](https://github.com/boto/boto3/blob/develop/CHANGELOG.rst)
+- [Commits](https://github.com/boto/boto3/compare/1.24.72...1.24.73)
+
+---
+updated-dependencies:
+- dependency-name: boto3
+ dependency-type: direct:production
+ update-type: version-update:semver-patch
+...
+
+Signed-off-by: dependabot[bot] <support@github.com>
+
+Signed-off-by: dependabot[bot] <support@github.com>
+Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
+
+- chore: caretaker action [`[e208736]`](https://github.com/AWSToolbox/list-availability-zones/commit/e208736e3956d24a99c9043a040ad558526548aa)
+
+- Codacy [`[7dad6b3]`](https://github.com/AWSToolbox/list-availability-zones/commit/7dad6b3f1b19f932f0976ca0ad0b263932d5a410)
 
 - chore: caretaker action [`[c356e2f]`](https://github.com/AWSToolbox/list-availability-zones/commit/c356e2f3cf194ad179eb93068136addeb02d67d6)
 
