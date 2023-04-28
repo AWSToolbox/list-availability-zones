@@ -1,4 +1,4 @@
 botocore==1.29.122
 prettytable==3.7.0
-boto3==1.26.121
+boto3==1.26.122
 requests==2.29.0
