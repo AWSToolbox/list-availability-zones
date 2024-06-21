@@ -1,0 +1,5 @@
+botocore==1.34.131
+prettytable==3.10.0
+boto3==1.34.131
+wolfsoftware.notify==0.1.0
+yaspin==3.0.2
