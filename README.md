@@ -1,60 +1,83 @@
+<!-- markdownlint-disable -->
 <p align="center">
     <a href="https://github.com/AWSToolbox/">
         <img src="https://cdn.wolfsoftware.com/assets/images/github/organisations/awstoolbox/black-and-white-circle-256.png" alt="AWSToolbox logo" />
     </a>
     <br />
-    <a href="https://github.com/AWSToolbox/list-availability-zones/actions/workflows/cicd-pipeline.yml">
-        <img src="https://img.shields.io/github/workflow/status/AWSToolbox/list-availability-zones/CICD%20Pipeline/master?style=for-the-badge" alt="Github Build Status">
+    <a href="https://github.com/AWSToolbox/list-availability-zones/actions/workflows/cicd.yml">
+        <img src="https://img.shields.io/github/actions/workflow/status/AWSToolbox/list-availability-zones/cicd.yml?branch=master&label=build%20status&style=for-the-badge" alt="Github Build Status" />
     </a>
+    <a href="https://github.com/AWSToolbox/list-availability-zones/blob/master/LICENSE.md">
+        <img src="https://img.shields.io/github/license/AWSToolbox/list-availability-zones?color=blue&label=License&style=for-the-badge" alt="License">
+    </a>
+    <a href="https://github.com/AWSToolbox/list-availability-zones">
+        <img src="https://img.shields.io/github/created-at/AWSToolbox/list-availability-zones?color=blue&label=Created&style=for-the-badge" alt="Created">
+    </a>
+    <br />
     <a href="https://github.com/AWSToolbox/list-availability-zones/releases/latest">
         <img src="https://img.shields.io/github/v/release/AWSToolbox/list-availability-zones?color=blue&label=Latest%20Release&style=for-the-badge" alt="Release">
+    </a>
+    <a href="https://github.com/AWSToolbox/list-availability-zones/releases/latest">
+        <img src="https://img.shields.io/github/release-date/AWSToolbox/list-availability-zones?color=blue&label=Released&style=for-the-badge" alt="Released">
     </a>
     <a href="https://github.com/AWSToolbox/list-availability-zones/releases/latest">
         <img src="https://img.shields.io/github/commits-since/AWSToolbox/list-availability-zones/latest.svg?color=blue&style=for-the-badge" alt="Commits since release">
     </a>
     <br />
-    <a href=".github/CODE_OF_CONDUCT.md">
+    <a href="https://github.com/AWSToolbox/list-availability-zones/blob/master/.github/CODE_OF_CONDUCT.md">
         <img src="https://img.shields.io/badge/Code%20of%20Conduct-blue?style=for-the-badge" />
     </a>
-    <a href=".github/CONTRIBUTING.md">
+    <a href="https://github.com/AWSToolbox/list-availability-zones/blob/master/.github/CONTRIBUTING.md">
         <img src="https://img.shields.io/badge/Contributing-blue?style=for-the-badge" />
     </a>
-    <a href=".github/SECURITY.md">
+    <a href="https://github.com/AWSToolbox/list-availability-zones/blob/master/.github/SECURITY.md">
         <img src="https://img.shields.io/badge/Report%20Security%20Concern-blue?style=for-the-badge" />
     </a>
     <a href="https://github.com/AWSToolbox/list-availability-zones/issues">
         <img src="https://img.shields.io/badge/Get%20Support-blue?style=for-the-badge" />
     </a>
-    <br />
-    <a href="https://wolfsoftware.com/">
-        <img src="https://img.shields.io/badge/Created%20by%20Wolf%20Software-blue?style=for-the-badge" />
-    </a>
 </p>
 
 ## Overview
 
-This script will display a list of all available regions and their availability zones.
+This Python package allows you to list all availability zones configured for a given AWS account. It is part of our larger
+[AWS Toolkit](https://github.com/AWSToolbox).
 
 ### Installation
 
-Once you have cloned the code you will need to install the required python packages.
+To install the package, use:
 
+```sh
+pip install wolfsoftware.list-availability-zones
 ```
-pip install -r requirements.txt 
-```
-> The requirements file is in the src directory
 
 ### Usage
 
-```shell
-./list-availability-zones.py
+To list all availability zones for your AWS account, use the following command:
+
+```sh
+usage: list-availability-zones [-h] [-V] [-p PROFILE] [-t THREADS]
+
+List all availability zones configured for an account.
+
+Flags:
+  -h, --help            Show this help message and exit
+  -V, --version         Show program's version number and exit.
+
+Optional arguments:
+  -p PROFILE, --profile PROFILE
+                        AWS profile name from ~/.aws/credentials (default: None)
+  -t THREADS, --threads THREADS
+                        The number of threads to use (default: 8)
 ```
 
 ### Requirements
 
-You will need a valid set of AWS credentials in order to run this command.
+You will need a valid set of AWS credentials to run this command. These credentials should be configured in your `~/.aws/credentials` file.
 
-### Example output
+### Example Output
+
+Below is an example of the output you can expect from running this command:
 
 ```
 +----------------+---------------------------+--------------------+-------+
@@ -81,13 +104,13 @@ You will need a valid set of AWS credentials in order to run this command.
 |   us-west-1    |   US West (California)    |        a, c        |   2   |
 |   us-west-2    |      US West (Oregon)     |     a, b, c, d     |   4   |
 +----------------+---------------------------+--------------------+-------+
-
 ```
 
-> If a cell is empty it is because you are not opt'd into that region and therefore we cannot query that information.
+> Note: If a cell is empty, it means you are not opted into that region and therefore the information cannot be queried.
 
-## Regions
+### Additional Information
 
-If you want information relating to regions only then please have a look at out [List Regions](https://github.com/AWSToolbox/list-regions) script.
+For more tools and utilities, check out our [AWS Toolkit](https://github.com/AWSToolbox).
 
-> Listing regions only runs a **LOT** faster, so please make sure you select the correct script.
+<br />
+<p align="right"><a href="https://wolfsoftware.com/"><img src="https://img.shields.io/badge/Created%20by%20Wolf%20on%20behalf%20of%20Wolf%20Software-blue?style=for-the-badge" /></a></p>

@@ -4,18 +4,30 @@ updates:
   - package-ecosystem: "github-actions"
     directory: "/"
     schedule:
-      interval: "daily"
+      interval: "weekly"
+      day: "monday"
+      time: "04:00"
     open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore:"
     labels:
-      - "dependabot: lang : github actions"
+      - "dependabot: ecosystem : github actions"
       - "dependabot: dependencies"
+    assignees:
+      - "TGWolf"
 
   - package-ecosystem: "pip"
     directory: "/"
     schedule:
-      # Check for updates to GitHub Actions every weekday
-      interval: "daily"
+      interval: "weekly"
+      time: "04:00"
+      day: "monday"
     open-pull-requests-limit: 10
+    commit-message:
+      prefix: "chore:"
     labels:
-      - "dependabot: lang : python"
+      - "dependabot: ecosystem : python"
       - "dependabot: dependencies"
+    assignees:
+      - "TGWolf"
+
