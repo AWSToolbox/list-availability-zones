@@ -26,9 +26,9 @@ setup(
     long_description_content_type='text/markdown',
     url='https://github.com/DevelopersToolbox/template-package-cli',
     project_urls={
-        ' Source': 'https://github.com/AWSToolbox/list-regions',
-        ' Tracker': 'https://github.com/AWSToolbox/list-regions/issues/',
-        ' Documentation': 'https://github.com/AWSToolbox/list-regions',
+        ' Source': 'https://github.com/AWSToolbox/list-availability-zones',
+        ' Tracker': 'https://github.com/AWSToolbox/list-availability-zones/issues/',
+        ' Documentation': 'https://github.com/AWSToolbox/list-availability-zones',
         ' Sponsor': 'https://github.com/sponsors/WolfSoftware',
     },
     classifiers=[

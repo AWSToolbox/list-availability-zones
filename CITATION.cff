@@ -3,9 +3,9 @@ message: If you use this software, please cite it using these metadata.
 title: List availability zones (AWS)
 abstract: List all availability zones (AWS)
 type: software
-version: 0.1.0
+version: 0.1.1
 date-released: 2024-06-21
-repository-code: https://github.com/AWSToolbox/list-regions
+repository-code: https://github.com/AWSToolbox/list-availability-zones
 keywords:
   - "Wolf Software"
   - "Software"
