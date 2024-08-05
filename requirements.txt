@@ -1,4 +1,4 @@
-botocore==1.34.149
+botocore==1.34.153
 prettytable==3.10.2
 boto3==1.34.149
 wolfsoftware.notify==0.1.2
