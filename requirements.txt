@@ -1,5 +1,5 @@
 botocore==1.34.158
-prettytable==3.10.2
+prettytable==3.11.0
 boto3==1.34.158
 wolfsoftware.notify==0.1.2
 yaspin==3.0.2
