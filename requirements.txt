@@ -1,4 +1,4 @@
 prettytable==3.12.0
-boto3==1.36.2
+boto3==1.36.6
 wolfsoftware.notify==0.1.2
 yaspin==3.1.0
